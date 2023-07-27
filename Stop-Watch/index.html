@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="outer-circle" id="outer-circle">
+            <div class="inner-circle">
+                <span class="min" id="min">0 :</span>
+                <span class="sec" id="sec">&nbsp; 0 :</span>
+                <span class="milli-sec" id="msec">&nbsp; 0</span>   
+            </div> 
+        </div>
+        <div class="buttons-set">
+            <button class="buttons  hidden" id="reset" onclick="reset()">Reset</button>
+            <button class="buttons" id="play" onclick="playing()">Play</button>
+            <button class="buttons  hidden" id="lap"  onclick="lap()">Lap</button>
+        </div>
+        <ul class="lap" id="laps">
+            <button class="clear-lap-buuton hidden" id="clear-all" onclick="clearBtn()">Clear All</button>
+        </ul>
+    </div>
+  
+    
+</body>
+<script src="./app.js"></script>
+</html>

@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins ,sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:#000000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    
+}
+.container{
+    margin-top: 100px;
+}
+.outer-circle{
+    width: 230px;
+    height:230px;
+    border-radius: 50%;
+    background-color: #CB1414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.inner-circle{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.animation-bg{
+    background: linear-gradient(-45deg, #CB1414, #570000,#780f0f,#f00404);
+    background-size: 400% 400%;
+    animation: gradient 1s ease infinite;
+}
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.min{
+    font-size: 43px;
+}
+.sec{
+    font-size: 34px;
+}
+.milli-sec{
+    font-size: 23px;
+}
+.buttons-set{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.buttons{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #CB1414;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+.buttons:hover{
+    background-color: #CB1414;
+    color: black;
+}
+.lap{
+    width: 250px;
+    height: 250px;
+    overflow: auto;
+    color: white;
+    list-style: none;
+    position: relative;
+    margin-top: 30px;
+}
+.lap::-webkit-scrollbar{
+    display: none;
+}
+.lap-item{
+    padding: 10px;
+    width:100% ;
+    display: block;
+    text-align: center;
+    border: 1px solid #CB1414;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+.number{
+    color: #cccccc;
+}
+.lap-stamp{
+    margin-left: 25px;
+    display: inline-block;
+}
+.clear-lap-buuton{
+    position: fixed;
+    display: block;
+    width: 180px;
+    z-index: 1000;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 130px;
+    padding: 10px 0;
+    border-radius: 50px;
+    /* background-color: rgba(255,255,255,0.9); */
+    background-color: #CB1414;
+    color: #fff;
+    /* border: 2px solid white; */
+    border: none;
+    cursor: pointer;
+}
+.hidden{
+    visibility: hidden;;
+}
